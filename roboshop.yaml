@@ -19,11 +19,11 @@
       tags:
         Project: roboshop
         Component: "{{ item }}"
-        Environment: "{{env}}"
-        Name: "{{ item }}-{{env}}"
+        Environment: "{{ env }}"
+        Name: "{{ item }}-{{ env }}"
     loop: "{{ instances }}"
     register: ec2_output
 
   - name: print the ec2_output
     ansible.builtin.debug:
-      msg: "{{ec2_output}}"
+      msg: "{{ ec2_output }}"
