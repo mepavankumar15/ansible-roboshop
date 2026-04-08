@@ -14,8 +14,8 @@
 
   - name: enable service
     ansible.builtin.service:
-      name: mongodb
-      enable: yes
+      name: mongod
+      enabled: yes
       state: started
 
   - name: replace sg
