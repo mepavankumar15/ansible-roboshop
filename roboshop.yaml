@@ -3,7 +3,7 @@
   hosts: all
   connection: local
   vars:
-    sg_id: sg-0252bb79ad7e6f48b
+    sg_id: sg-0cf89fb7f592b1fe1
     ami_id: ami-0220d79f3f480ecf5
     domain_name: avyunan.fun
     env: dev
